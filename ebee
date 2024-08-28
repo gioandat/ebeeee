@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anh xin loi embeeee</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 2s ease-out, moveIn 2s ease-out; /* Added moveIn animation */
+        }
+        h1 {
+            color: #e63946;
+            font-size: 2em;
+            margin-bottom: 10px;
+            animation: shake 0.5s ease;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-out;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #e63946;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+            animation: fadeIn 3s ease-out;
+        }
+        .button:hover {
+            background-color: #d62839;
+        }
+        .heart {
+            color: #e63946;
+            font-size: 3em;
+            animation: pulse 1s infinite; /* Increased heartbeat speed by 50% */
+        }
+        .confetti {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .confetti div {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #e63946;
+            opacity: 0.7;
+            animation: confetti 10s linear infinite; /* Increased fall duration and set to infinite */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); } /* Increased scale for heartbeat effect */
+            100% { transform: scale(1); }
+        }
+        @keyframes confetti {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100vh); }
+        }
+        @keyframes moveIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="confetti">
+            <!-- Confetti pieces -->
+            <div style="left: 10%; top: 0; animation-delay: 0s;"></div>
+            <div style="left: 30%; top: 0; animation-delay: 0.5s;"></div>
+            <div style="left: 50%; top: 0; animation-delay: 1s;"></div>
+            <div style="left: 70%; top: 0; animation-delay: 1.5s;"></div>
+            <div style="left: 90%; top: 0; animation-delay: 2s;"></div>
+        </div>
+        <h1>anh xin loi embeeee</h1>
+        <p>anh xin loi ebe maaaaa, iu embe lammmmm</p>
+        <p class="heart">❤️</p>
+        <a href="https://media.giphy.com/media/W1hd3uXRIbddu/giphy.gif?cid=790b7611dh99pleo4rtlz8q523lmdfdoqnko60dx9x8sbjo3&ep=v1_gifs_search&rid=giphy.gif&ct=g" class="button" target="_blank">bam vao day diii</a>
+        <p>yeu embeee lammmm aaaaa</p>
+    </div>
+</body>
+</html>
